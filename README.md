@@ -18,7 +18,7 @@
 ### 三.工具使用
 一共包含两个文件:
 > py2fcapi.py
->
+> 
 > tkGUI.py
 
 #### py2fcapi.py
@@ -27,7 +27,7 @@
 
 其中`dict`里有
 > `word`:关键词
->
+> 
 > `pcPv`:pc浏览量
 >
 > `mobPv`:移动浏览量
