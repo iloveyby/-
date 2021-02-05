@@ -10,7 +10,7 @@ class Tool_GUI(Frame):
 
     def create_widgets(self):
         # 标题
-        self.master.title("凤巢拓词工具内测版本-眼睛制作_v0.5")
+        self.master.title("凤巢拓词工具内测版本-Felix制作_v0.5")
         # 窗口大小
         self.master.geometry('600x400+500+200')
         # 初始化数据变量
