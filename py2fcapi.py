@@ -44,12 +44,12 @@ class FCAPI(object):
         }
         self.url = "https://api.baidu.com/json/sms/service/KRService/getKRByQuery"
 
-    def _push(self):
-        self.payload['body']['query'] = self.kw
+    def _push(self,kw):
+        self.payload['body']['query'] = kw
         req = requests.post(self.url, data=json.dumps(self.payload))
         return req.text
 
-    def _analysis(self,):
+    def _analysis(self,result):
         result_list = json.loads(self.result)['body']['data']
         out_result = []
         for i in result_list:
@@ -58,9 +58,8 @@ class FCAPI(object):
         return out_result
 
     def getKeywords(self, kw):
-        self.kw=kw
-        self.result = self._push()
-        return self._analysis()
+        self.result = self._push(kw)
+        return self._analysis(self.result)
 
     @property
     def status(self):
