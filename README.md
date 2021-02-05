@@ -59,3 +59,5 @@ print(a.status)
 #### tkGUI.py
 直接运行python文件即可
 
+### 下载地址
+[点我下载](https://github.com/iloveyby/BaiduFengchaoAPI/releases/tag/v0.5-beta)
