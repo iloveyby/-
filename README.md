@@ -57,7 +57,7 @@ print(a.status)
 >>> keyword success
 ```
 #### tkGUI.py
-直接运行python文件即可
+有python环境的可直接运行该文件，没有环境的可以点下方链接下载.exe文件
 
-### 下载地址
+### 四.下载地址
 [点我下载](https://github.com/iloveyby/BaiduFengchaoAPI/releases/tag/v0.5-beta)
