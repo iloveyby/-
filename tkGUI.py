@@ -89,7 +89,7 @@ class Tool_GUI(Frame):
         file_text = self.output.get('1.0', END)
         if file_path is not None:
             with open(file=file_path, mode='a+', encoding='utf-8') as file:
-                file.write('word'+'\t'+pcPV+'\t'+'mobPV'+'\t'+'totalPV'+'\n')
+                file.write('word'+'\t'+'pcPV'+'\t'+'mobPV'+'\t'+'totalPV'+'\n')
                 file.write(file_text)
             dialog.Dialog(None, {'title': 'File Modified', 'text': '保存完成', 'bitmap': 'warning', 'default': 0,
                                  'strings': 'OK'})

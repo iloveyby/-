@@ -58,7 +58,8 @@ class FCAPI(object):
         return out_result
 
     def getKeywords(self, kw):
-        self.result = self._push(kw)
+        self.kw=kw
+        self.result = self._push(self.kw)
         return self._analysis(self.result)
 
     @property
